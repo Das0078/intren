@@ -1,1 +1,1 @@
-https://das0078.github.io/intren/
+https://das0078.github.io/intren/index.html
