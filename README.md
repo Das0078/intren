@@ -6,3 +6,6 @@ https://das0078.github.io/intren/table.html
 
 Link for vacation booking page
 https://das0078.github.io/intren/travel.html
+
+Link for google page
+https://das0078.github.io/intren/google.html
