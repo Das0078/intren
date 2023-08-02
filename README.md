@@ -9,3 +9,5 @@ https://das0078.github.io/intren/travel.html
 
 Link for google page
 https://das0078.github.io/intren/google.html
+
+https://das0078.github.io/intren/Adamas.html
