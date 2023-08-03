@@ -264,6 +264,12 @@ nav li a{
     .quote, .chan{
         display: none;
     }
+    nav button{
+        padding: 4px;
+    }
+    .bur{
+        margin-right: 10px;
+    }
     
 }
 
