@@ -1,101 +1,214 @@
+
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-.container1{
-    /* border: 1px solid black; */
-    
-    background-color: rgb(35, 67, 244);
-    border-radius: 5px;
-    max-width: 100%;
-    height: 500px;
-   
-    
-    
+body,html{
+    height: 100%;
+  }
+  .parent{
+    background-image: url("./images/mike-kenneally-TD4DBagg2wE-unsplash.jpg");
+  
+    height: fit-content;
+    width: 100%;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+  }
+.collapse{
+    position: relative;
+    left: 330px;
 }
+
 nav{
-    /* border: 1px solid red; */
-    position: relative;
-
-    top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
+    margin-bottom: 50px;
 }
-nav .logo{
-    margin-right: 250px;
-    font-weight: 600;
-    font-size: 30px;
-    color: azure;
-
-    
-   
+.navbar{
+    transition: 0.3s;
 }
-nav li{
-    /* border: 1px solid aqua; */
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 37px;
-    font-size: 19px;
-    color: azure;
 
-
-   
-}
-.title{
-    position: relative;
-    top: 170px;
-    right: 200px;
-    font-weight: 800;
-    font-size: 60px;
-    color: azure;
-}
-/* .btn{
-    position: relative;
-    left: 190px;
-    top: 130px;
-    padding: 10px 25px;
-    border-radius: 5px;
+.navbar-brand{
     font-weight: bold;
-    font-size: 17px;
-    margin-left: 5px;
-    border: none;
-    transition: 0.1s;
-} */
-/* .btn:hover{
-    background-color: rgb(68, 66, 64);
-    color: azure;
-    font-size: 20px;
-    
-} */
+    font-size: 30px;
+}
 
+
+
+.nav-item{
+    margin-left:58px;
+}
+.nav-item .nav-link{
+    color: rgb(226, 226, 226);
+ font-size: 20px;
+    transition: 0.3s;
+}
+.nav-item .nav-link:hover{
+color: #001219;
+ border-radius: 20px;
+padding: 5px 10px;
+background-color: azure; 
+
+}
 .row{
-    border: 1px solid black;
-    max-width: 80%;
-
+    background-color: black;
+    color: azure;
+    height: 320px;
+    
 }
 .c1{
-    color: azure;position: absolute;
-    top: 250px;
+    margin-top: 60px;
+    max-width: 1400px;
 }
-.con2{
-    max-width: 100%;
-    background-color: antiquewhite;
-    height: 500px;
-    z-index: 1;
+
+/* .letter{
+   display: none;
+   position: absolute;
    
-
 }
-.meet{
-    font-weight: bold;
-    font-size: 60px;
+.letter .im{
+    z-index: -1;
+    width: 670px;
+   height: 710px;
+   
+}
+.c2{
     position: relative;
-    bottom: 50px;
+    top: -710px;
+    
+    left: -60px;
+    display: none;
+    z-index: 3;
+} */
+
+
+.con{
+    /* border: 1px solid aqua; */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: azure;
+    border-bottom: 1px solid grey;
+    background-color: rgba(0, 0, 0, 1);
+
+    
+}
+.para{
+    /* border: 1px solid wheat; */
+    max-width: 500px;
+    margin-bottom: 20px;
+    transition: 0.3s;
 }
 
+.map{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+
+}
+.map:hover{
+   filter: grayscale(40%);
+}
+
+.u1{
+    height: 350px;
+   
+}
+.u1 h6{
+    text-align: center;
+}
+.role{
+    color: rgb(208, 203, 203);
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    transition: 0.7s;
+}
+
+.card:hover{
+    width: 450px;
+}
+.spec,.spec2{
+    display: flex;
+    background-image: url("./images/wood.png");
+    /* border: 1px solid aqua; */
+    height: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.spec2{
+    background-image: url("./images/wood2.png")
+
+}
+.best{
+    width: 350px;
+    height: 250px;
+    /* border: 1px solid red; */
+  }
+  .our h2{
+    margin-top: 10px;
+    background-color: rgb(147, 17, 17);
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .our h2:hover{
+    font-size: 20px;
+  }
+
+
+footer{
+    position: relative;
+    bottom: 0px;
+    color: azure;
+    text-align: center;
+    background-color: rgb(14, 14, 13);
+}  
+footer .bi{
+    margin-left: 10px;
+}
+
+footer a{
+    color: azure;
+}
+@media(max-width:990px){
+    .collapse{
+        left: 0px;
+    }
+    .navbar{
+        background-color: #001219;
+    }
+    .para{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 899px){
+.con{
+    height: 600px;
+}
+.spec,.spec2{
+    height: 350px;
+}
+
+
+  /* .c2{
+    display: block;
+  }
+  .letter{
+    display: block;
+  } */
+}
 

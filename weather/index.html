@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+<link rel="stylesheet" href="weather.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- <style>
+    .box{
+        color: black;
+    }
+</style> -->
+
+</head>
+<body style="background-color: rgb(206, 213, 213);" onload="def()">
+
+    <!-- <h1 id="temp">00</h1> -->
+<div class="container">
+    <div class="search">
+        <input type="text" id="value">
+        <button type="submit" onclick="sub()">Search</button>
+    </div>
+    <div class="con" id="con">
+       <span class="place" id="place">Kolkata,IN</span>
+       <p class="timezone" id="timezone">13/08/2023 9.30 pm</p>
+       
+        
+        <h1 class="temp" id="temp">27 °c </h1>
+        <span class="u_temp" id="u_temp"><i class="bi bi-arrow-up-square-fill"> 30 'C</i></span>
+        <span class="l_temp" id="l_temp"><i class="bi bi-arrow-down-square-fill"> 25 'C</i></span>
+        <div class="details">
+            <div class="box">
+                <p class="det">Sunrise</p>
+                <span><i class="bi bi-brightness-alt-high-fill det"></i></span>
+                <span class="det" id="Sunrise">5.15 AM</span> 
+            </div>
+            <div class="box">
+                <p>Sunset</p>
+                <span><i class="bi bi-brightness-alt-low-fill"></i></span>
+                <span id="Sunset">5.15 AM</span>
+    
+            </div>
+            <div class="box">
+                <p>Visibility</p>
+                <span><i class="bi bi-eyeglasses"></i></span>
+                <span id="Visibility">5.15 AM</span>
+            </div>
+            <div class="box">
+                <p>Humadity</p>
+                <span><i class="bi bi-droplet-fill"></i></span>
+                <span id="Humadity">5.15 AM</span>
+                
+            </div>
+            <div class="box">
+                <p>Pressure</p>
+                <span><i class="bi bi-cloud-haze-fill"></i></span>
+                <span id="Pressure">5.15 AM</span>
+            </div>
+            <div class="box">
+                <p>Wind</p>
+                <span><i class="bi bi-wind"></i></span>
+                <span id="Wind">5.15 AM</span>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+   
+ 
+    <script src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
