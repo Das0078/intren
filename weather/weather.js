@@ -91,8 +91,9 @@ const getData = async (a) => {
 
                 break;
             case "Clouds":
-                t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-lightning-rain-fill"></i>';
-                con.style.backgroundImage = "url('./files/thunder.gif')";
+                t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-drizzle-fill"></i>';
+                con.style.backgroundImage = "url('./files/l_rain.gif')";
+
 
 
                 break;
@@ -102,6 +103,10 @@ const getData = async (a) => {
 
 
                 break;
+                case "Mist":
+                    t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-fog2-fill"></i>';
+                    con.style.backgroundImage = "url('./files/mist.gif')";
+                    break;
 
             default:
                 t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-brightness-high-fill">';
@@ -179,7 +184,7 @@ const def = async () => {
     const vis = data.visibility;
 
     const arr = [temp, temp_max, temp_min, humidity, pressure, country, city, sunrise, sunset, unixTimestamp, wea, wind, vis];
-    console.log(arr);
+    console.log("onload",arr);
 
 
 
@@ -255,8 +260,8 @@ const def = async () => {
             break;
 
         case "Clouds":
-            t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-lightning-rain-fill"></i>';
-            con.style.backgroundImage = "url('./files/thunder.gif')";
+            t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-drizzle-fill"></i>';
+            con.style.backgroundImage = "url('./files/l_rain.gif')";
             break;
 
         case "Haze":
@@ -272,7 +277,7 @@ const def = async () => {
 
         case "Mist":
             t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-fog2-fill"></i>';
-            con.style.backgroundImage = "url('./files/thunder.gif')";
+            con.style.backgroundImage = "url('./files/mist.gif')";
             break;
 
         default:
@@ -292,8 +297,8 @@ const def = async () => {
     place.innerHTML = city + "," + country;
 
     console.log(data.visibility);
-    vis = document.getElementById("Visibility");
-    vis.innerHTML = data.visibility;
+    const visi = document.getElementById("Visibility");
+    visi.innerHTML = vis;
 
     const hum = document.getElementById("Humadity");
     hum.innerHTML = humidity;
@@ -303,8 +308,8 @@ const def = async () => {
 
 
 
-    wind = document.getElementById("Wind");
-    wind.innerHTML = data.wind.speed;
+    const wi = document.getElementById("Wind");
+    wi.innerHTML =wind;
     // console.log(data.dt);
     console.log(data);
 
