@@ -93,10 +93,14 @@ const getData = async (a) => {
             case "Clouds":
                 t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-drizzle-fill"></i>';
                 con.style.backgroundImage = "url('./files/l_rain.gif')";
-
-
-
                 break;
+
+                case "Rain":
+                    t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-lightning-rain-fill"></i>';
+                    con.style.backgroundImage = "url('./files/thunder.gif')";
+                    break;
+
+
             case "Haze":
                 t.innerHTML = temp + " °c" + " " + wea + " " + '<i class="bi bi-cloud-sun-fill"></i>';
                 con.style.backgroundImage = "url('./files/haze.gif')";
